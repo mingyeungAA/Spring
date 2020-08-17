@@ -6,7 +6,7 @@
 
 이미 등록된 bean에 대해서만 annotation을 활성화한다.
 
-@Autowired와 @Qulifier 두가지만 해결한다.
+@Autowired와 @Qualifier 두가지만 해결한다.
 
 따라서 위 태그를 사용하더라도 xml에 bean을 반드시 선언해야 한다.
 
