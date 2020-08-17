@@ -1,8 +1,8 @@
-###<context: annotation-config/>  vs  <context: component-scan/>
+### ###<context: annotation-config/>  vs  <context: component-scan/>
 
 
 
-#####<context : annotation-config/>
+#### <context : annotation-config/>
 
 이미 등록된 bean에 대해서만 annotation을 활성화한다.
 
@@ -12,7 +12,7 @@
 
 
 
-#####<context : component-scan/>
+#### <context : component-scan/>
 
 bean의 등록 여부와 관계없다. 스프링이 알아서 bean 스캔을 통해 Annotation을 해석하고 활성화한다.
 
