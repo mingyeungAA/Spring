@@ -1,4 +1,4 @@
-#### Spring Container (=Bean Factory = IoC Container)
+### Spring Container (=Bean Factory = IoC Container)
 
 : Spring Framework의 핵심 컴포넌트
 
