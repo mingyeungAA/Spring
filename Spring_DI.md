@@ -96,7 +96,7 @@
 
   - 생성,설정,사용, 종료로 주기를 4부분으로 나눌 수 있다.
 
-  <img src="C:\Users\mingy\Pictures\Saved Pictures\이미지_4.png" alt="이미지_4" style="zoom:50%;" />
+  <img src="https://blog.naver.com/PostView.nhn?blogId=mingyeung&Redirect=View&logNo=222064265458&categoryNo=1&isAfterWrite=true&isMrblogPost=false&isHappyBeanLeverage=true&contentLength=3048#" alt="이미지_4" />
 
 
 
