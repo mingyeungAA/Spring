@@ -96,7 +96,7 @@
 
   - 생성,설정,사용, 종료로 주기를 4부분으로 나눌 수 있다.
 
-  <img src="https://blog.naver.com/PostView.nhn?blogId=mingyeung&Redirect=View&logNo=222064265458&categoryNo=1&isAfterWrite=true&isMrblogPost=false&isHappyBeanLeverage=true&contentLength=3048#" alt="이미지_4" />
+  <img src="https://postfiles.pstatic.net/MjAyMDA4MThfMTEz/MDAxNTk3NzU3NjAxMTc5.i4hqJJ267kqyJsbeFY2mYZmaRAyFRZ2-lEdEFoK6NrYg.-fufbxlauAKTQSmqXSm72mW2gogPrF6Po2I9qgV0fbgg.PNG.mingyeung/%EC%9D%B4%EB%AF%B8%EC%A7%80_4.png?type=w966" alt="이미지_4" />
 
 
 
