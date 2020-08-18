@@ -6,18 +6,17 @@
 
 ### OCP (Open Closed Principle)
 
-
+<br>
 
 --- 
-
-
+<br>
 
 ### DI (Dependency Injection) 의존성 주입
 
 - 객체간의 결합을 느슨하게 하는 스프링의 핵심 기술 (유지보수에 좋다.)
 - 의존성 주입이란? = 사용자가 직업 new키워드를 사용하여 객체를 생성하지 않고, 외부(컨테이너)에서 생성된 객체를 주입받는 방식
 
-
+<br>
 
 ​	※의존관계를 관리하는 방법
 
@@ -25,7 +24,7 @@
  	2. Setter Injection : setter()를 통한 전달.    `<property/>` 사용
  	3. Field Injection : 멤버변수를 통한 전달.
 
-
+<br>
 
 > ###### 강결합 
 
@@ -35,7 +34,7 @@
 
 -MessageBean클래스를 다른 클래스로 변경할 경우, HelloApp의 소스를 **같이 수정해 주어야 한다.**
 
-
+<br>
 
 > ###### 약결합
 
@@ -47,7 +46,7 @@
 
 -일반적으로 팩토리 메서드를 활용하여, 사용할 객체를 생성한다. MessageBean이라는 이름의 MessageBeanKo의 객체가 생성되든 MessageBeanEn의 객체가 생성되든 HelloApp은 **수정될 사항이 없다.**
 
-
+<br>
 
 > ###### 약결합
 
@@ -60,8 +59,8 @@
 
 
 
-
-
+<br>
+<br>
 
 ---
 
@@ -73,7 +72,7 @@
 
 : POJO를 이용하여 EJB이 기능을 유지하면서 복잡성을 제거하고, 객체들의 라이프사이클을 관리해준다.
 
-
+<br>
 
 - bean을 포함하고 관리하는 책임이 있다.
 
@@ -82,7 +81,7 @@
   - 객체들을 구성하고
   - 객체들의 전체 생명주기(lifecycle)을 관리
 
-  
+  <br>
 
 - Spring Container의 2가지 유형
 
@@ -90,7 +89,7 @@
 
   - **ApplicationContext** : Resources가 제한되어 있지 않은 모든 곳에 사용한다. BeanFactory와 유사하지만 좀더 향상된 컨테이너이다.   `ClassPathXmlApplicationContext`
 
-    
+    <br>
 
 - 컨테이너 생명주기
 
