@@ -1,4 +1,32 @@
-### Spring Container (=Bean Factory = IoC Container)
+## Spring 특징
+
+### DI (Dependency Injection) / IoC(Inversion of Control)
+
+### AOP (Aspect Oriented Programming)
+
+### OCP (Open Closed Principle)
+
+<br>
+
+---
+
+<br>
+
+### IoC (Inversion of Control) (=제어역전 / 역전제어 / 제어반전)
+
+: 프로그램의 제어 흐름 구조가 뒤바뀌는 것
+
+: 객체 생성하는 곳과 사용하는 곳을 분리한다.
+
+
+
+<br>
+
+---
+
+<br>
+
+#### Spring Container (=Bean Factory = IoC Container)
 
 : Spring Framework의 핵심 컴포넌트
 
@@ -32,4 +60,6 @@
   <img src="https://postfiles.pstatic.net/MjAyMDA4MThfMTEz/MDAxNTk3NzU3NjAxMTc5.i4hqJJ267kqyJsbeFY2mYZmaRAyFRZ2-lEdEFoK6NrYg.-fufbxlauAKTQSmqXSm72mW2gogPrF6Po2I9qgV0fbgg.PNG.mingyeung/%EC%9D%B4%EB%AF%B8%EC%A7%80_4.png?type=w966" alt="이미지_4" />
 
 *[그림출처](https://blog.naver.com/k220j/220728925820)
+
+
 
