@@ -48,7 +48,7 @@
 |  에스펙트<br />(Aspect)  | 에스펙트는 AOP의 중심단위. Advice와 pointcut을 합친것이다. 구현하고자 하는 횡단 관심사의 기능,애플리케이션의 모듈화 하고자 하는 부분. |
 |   엮기<br />(Weaving)    | 에스펙트를 대상 객체에 적용하여 새로운 프록시 객체를 생성하는 과정을 말한다.<br />Aspect는 대상 객체의 지정된 결합점에 엮인다. <br />(=하나로 묶여서 잘 실행회는 것 = ccc+cc) |
 
-**Advisor(Aspect) = Advice + pointcut **
+**Advisor(Aspect) = Advice + pointcut**
 
 
 
@@ -132,4 +132,7 @@
 
 
 
-ex) @Before("pointcut")    ->    `@Before("execution(public * *(..))")`
+ex)@Before("pointcut")  ->  `@Before("execution(public * *(..))")`
+
+
+
