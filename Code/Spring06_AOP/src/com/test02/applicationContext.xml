@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<bean id="woman" class="com.test02.Woman"></bean>
+	<bean id="man" class="com.test02.Man"></bean>
+	
+	<!-- Advice (=ccc) : 공통 관심사항 -->
+	<bean id="myAdvice" class="com.test02.MyAspect"></bean>
+	
+	
+	<!-- Advisor (=Aspect) = advice + pointcut -->
+	<bean id="myAdvisor" class="org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor">
+		<property name="advice" ref="myAdvice"/>
+		<!-- execution(public * *(..)) 경로에 ccc(공통사항)를 넣어준다. -->
+		<property name="expression" value="execution(public * *(..))"/>
+	</bean>
+	
+	<!-- proxy -->
+	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
+	
+	
+</beans>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+	
+	<aop:aspectj-autoproxy/>
+	
+	<bean id="man" class="com.test03.Man"/>
+	<bean id="woman" class="com.test03.Woman"/>
+	<bean id="myAspect" class="com.test03.MyAspect"/>
+	
+	<aop:config>
+		<aop:aspect ref="myAspect">
+			<!-- target호출하기 전에 --> 
+			<aop:before method="before" pointcut="execution(public * com.test03.Woman.classWork(..))"/>
+			<!-- target 호출한 후에 -->
+			<aop:after method="after" pointcut="execution(public * com.test03.Man.classWork())"/>
+		</aop:aspect>
+	</aop:config>	
+	
+</beans>
+<!-- target : 실제 호출되는 객체 -->
+<!-- 이 target객체를 호출될때 연결되는 메소드? -->

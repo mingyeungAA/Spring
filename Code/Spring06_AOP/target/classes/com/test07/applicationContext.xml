@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- target 객체 -->
+	<bean id="targetBean" class="com.test07.MessageBeanImpl">
+		<property name="name" value="Pengsoo"/>
+	</bean>
+	
+	
+	<!-- advice 객체  : MyAspect -->
+	<bean id="loggingAdvice" class="com.test07.LoggingAdvice"/>
+	
+	
+	<!-- advisor(aspect) = advice + pointcut -->
+	<bean id="myAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="advice" ref="loggingAdvice"></property>
+		<!-- 정규식 표현..따로 알아보기,, -->
+		<property name="pointcut">
+			<bean class="org.springframework.aop.support.JdkRegexpMethodPointcut">
+				<property name="pattern">
+					<value>.*sayHello.*</value>
+				</property>
+			</bean>
+		</property>
+	</bean>
+	
+	
+	<!-- proxy -->
+	<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="target" ref="targetBean"></property>
+		<property name="interceptorNames">
+			<list>
+				<value>myAdvisor</value>
+			</list>
+		</property>
+	</bean>
+	
+</beans>
