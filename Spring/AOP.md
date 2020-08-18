@@ -81,3 +81,55 @@
    `</aop:aspect>`
 
 `</aop:config>`
+
+
+
+<br>
+
+---
+
+<br>
+
+#### Proxy
+
+: target을 감싸서 target의 요청을 대신 받아주는 랩핑 오브젝트이다.
+
+: 클라이언트(호출자)에서 target을 호출하게 되면, target이 아닌 target을 감싸고 있는 proxy가 호출되어
+
+  target메소드 실행전에 선처리, target메소드 실행 후, 후처리를 실행시키도록 구성되어 있다.
+
+: AOP에서 proxy는 호출을 가로챈 후, advice에 등록된 기능을 수행 후, target메소드를 호출한다.
+
+<br>
+
+<br>
+
+#### target
+
+: cc (주관심사)
+
+<br>
+
+---
+
+<br>
+
+- **@Before**
+
+   : target메소드가 호출되기 전에 advice기능을 수행
+
+- **@After** 
+
+  : target메소드의 결과에 상관없이 target메소드가 완료되면 advice기능을 수행
+
+- **@After-Returning** 
+
+  : target메소드가 정상적으로 동작한 후, 결과값을 리턴한 후에 advice기능을 수행
+
+- **@After-Throwing** 
+
+  : target메소드가 수행중에 비정상적으로(예외가 발생하면) 동작하면, advice기능을 수행
+
+
+
+ex) @Before("pointcut")    ->    `@Before("execution(public * *(..))")`
