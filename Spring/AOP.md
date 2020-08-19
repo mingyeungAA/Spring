@@ -60,6 +60,32 @@
 
 ---
 
+### AOP 구현 방식
+
+1. **XML기반의 POJO클래스를 이용한 AOP구현**
+
+   - Advice클래스를 작성한다.
+
+   - XML설정 파일에서 `<aop:config>`를 이용해서 Aspect를 설정한다.
+
+     (즉, Advice와 pointcut을 설정한다.)
+
+     <br>
+
+2. **@Aspect 어노테이션을 이용한 AOP구현**
+
+   - @Aspect 어노테이션을 이용해서 Aspect클래스를 작성한다.
+
+   - 이때, Aspect클래스는 Advice를 구현하는 메서드와 pointcut을 포함한다.
+
+   - XML설정 파일에서 `<aop:aspectj-autoproxy>`를 설정한다.
+
+     <br>
+
+     <br>
+
+---
+
 ##### 설정 구조
 
 `<aop:config>`
@@ -94,6 +120,8 @@
 
 : target을 감싸서 target의 요청을 대신 받아주는 랩핑 오브젝트이다.
 
+: proxy는 advice를 target객체에 적용하면서 생성되는 객체이다.
+
 : 클라이언트(호출자)에서 target을 호출하게 되면, target이 아닌 target을 감싸고 있는 proxy가 호출되어
 
   target메소드 실행전에 선처리, target메소드 실행 후, 후처리를 실행시키도록 구성되어 있다.
@@ -112,7 +140,7 @@
 
 ---
 
-<br>
+### Advice 종류
 
 - **@Before**
 
