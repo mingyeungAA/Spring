@@ -49,8 +49,13 @@
 
   - BeanFactory : 주로 단순한 DI에서만 사용한다.    `XMLBeanFactory`
 
-  - **ApplicationContext** : Resources가 제한되어 있지 않은 모든 곳에 사용한다. BeanFactory와 유사하지만 좀더 향상된 컨테이너이다.   `ClassPathXmlApplicationContext`
+  - **ApplicationContext** 
 
+    - Resources가 제한되어 있지 않은 모든 곳에 사용한다. 
+    
+    - BeanFactory와 유사하지만 좀더 향상된 컨테이너이다. (BeanFactory를 상속한다.)
+    - `ClassPathXmlApplicationContext`
+    
     <br>
 
 - 컨테이너 생명주기
