@@ -1,4 +1,4 @@
-## Spring
+# 📄Spring
 
 - EJB(Enterprise JavaBean)기반 개발에서 POJO(Plain Old Java Object)기반 개발으로 바뀐
 
@@ -10,14 +10,18 @@
 
 
 
+<br>
 
+<br>
 
-## Spring Framework
+---
+
+### 💬Spring Framework
 
 - 프로그램의 골격이 되는 기본 코드
 - 개발자는 프레임워크를 기반으로 소스코드를 작성하여 소프트웨어를 완성시키면 된다.
 
-
+<br>
 
 
 
@@ -25,25 +29,25 @@
 
 **library(라이브러리) : 다른사람들이 만들어서 배포한 코드
 
+<br><br>
 
+---
 
+### 💬Spring 특징
 
-
-## Spring 특징
-
-- __DI__(Dependency Injection) / __IoC__(Inversion of Control)
-- __AOP__(Aspect Oriented Programming)
+- [**DI**](https://github.com/mingyeungAA/Spring/blob/master/Spring/Spring_DI.md) (Dependency Injection) / [**IoC**](https://github.com/mingyeungAA/Spring/blob/master/Spring/IoC.md) (Inversion of Control)
+- [**AOP**](https://github.com/mingyeungAA/Spring/blob/master/Spring/AOP.md) (Aspect Oriented Programming)
 - __OCP__(Open Closed Principle)
 
+<br>
 
+<br>
 
+---
 
-
-
-
-## Spring 개요
+### 💬Spring 개요
 
 [spring.io](https://spring.io/)
 
-<img src="C:\Users\mingy\Pictures\Saved Pictures\spring.io.png">
+![](https://postfiles.pstatic.net/MjAyMDA5MDFfMTMy/MDAxNTk4OTQxNjU3NDAz.f7st56mTecV-A4bO-dESVcUXdUeRF9pw_krxB__DClsg.I1MeWdsfjdmvuVJV1MXKzjeryBwx3OZyWlrW0LeLPh4g.PNG.mingyeung/spring.io.png?type=w966)
 
