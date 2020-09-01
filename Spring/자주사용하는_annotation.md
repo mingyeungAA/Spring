@@ -2,19 +2,19 @@
 
 *@어노테이션 - 사용할 수 있는 곳*
 
-##### **@Controller - 클래스**
+#### **@Controller - 클래스**
 
 : 컨트롤러 객체임을 명시
 
 <br>
 
-##### **@RequestMapping - 클래스, 메소드**
+#### **@RequestMapping - 클래스, 메소드**
 
 : 특정 URL에 매칭되는 클래스나 메소드임을 명시
 
 <br>
 
-##### **@RequestParam - 파라미터**
+#### **@RequestParam - 파라미터**
 
 : 요청에서 특정한 파라미터 값을 찾아낼때 사용
 
@@ -38,7 +38,7 @@
 
 <br>
 
-##### **@ModelAttribute - 메소드, 파라미터**
+#### **@ModelAttribute - 메소드, 파라미터**
 
 : 자동으로 해당 객체를 뷰까지 전달하도록 만든 것
 
@@ -56,25 +56,25 @@
 
 <br>
 
-##### **@ResponseBody - 메소드, 리턴타입**
+#### **@ResponseBody - 메소드, 리턴타입**
 
 : 리턴타입이 HTTP의 응답 메시지로 전송
 
 <br>
 
-##### **@RequestBody - 파라미터**
+#### **@RequestBody - 파라미터**
 
 : 요청 문자열이 그대로 파라미터로 전달
 
 <br>
 
-##### **@Respository - 클래스**
+#### **@Respository - 클래스**
 
 : Dao 객체
 
 <br>
 
-##### **@Service - 클래스**
+#### **@Service - 클래스**
 
 : biz(서비스) 객체
 
