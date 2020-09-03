@@ -38,6 +38,7 @@
 - **DispatcherServlet**(=FrontController)
 
   - 클라이언트의 요청을 전달 받는다. 컨트롤러에게 클라이언트의 요청을 전달하고 컨트롤러가 리턴한 결과값을 view에 전달하여 알맞은 응답을 생성한다.
+  - Spring Container를 생성한다.
   - 컨트롤러 호출
   - Dispatcher가 받은 요청은 HandlerMapping으로 넘어간다.
 
