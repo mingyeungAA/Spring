@@ -96,7 +96,7 @@
   - root-container를 /WEB-INF/applicationContext.xml을 이용해 빌드하도록 구현되어있다.
   - applicationContext.xml을 설정파일로 하여, 스프링 컨테이너를 하나 빌드하고 해당 컨테이너를 모든 서블릿 컨테이너가 공유할 수 있도록 설정한다.
   - ContextLoaderListener는 web.xml에 설정파일들이 모두 load되도록 등록할때 사용되고, 서블릿 이전에 서블릿을 초기화 시켜주며, contextConfigLocation으로 설정 파일들의 위치를 지정시켜준다.
-  - contextConfigLocation으로 위치를 처음에 지정해주지 않으면, 기본적으로 web.xml은 roo-context.xml로 설정파일 위치를 잡아준다.
+  - contextConfigLocation으로 위치를 처음에 지정해주지 않으면, 기본적으로 web.xml은 root-context.xml로 설정파일 위치를 잡아준다.
 
   - 어떤 xml을 호출해야 되는지 결정한다.
   - ContextLoaderListener는 Spring IoC Container(=Application Context)를 servlet application 생명 주기에 맞춰서 바인딩해준다.
@@ -155,7 +155,7 @@
 
     (servlet-context.xml에서 suffix, prefix를 통해 /WEB-INF/views/index.jsp 로 만들어주는 것도 ViewResolver이다.)
 
-12. 클라이언트가 요청한 view를 응답한다.
+12. 클라이언트가 요청한 view를 응답한다. (response)
 
 <br>
 
