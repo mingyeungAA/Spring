@@ -14,7 +14,7 @@
 
 - **`public void init(FilterConfig filgerConfig) throws ServletException`**
 
-  : 필터를 웹컨테이너 내에 생성한 후 **_초기화_**할 때 호출한다.
+  : 필터를 웹컨테이너 내에 생성한 후 **초기화**할 때 호출한다.
 
 - **`public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws java.io.IOException, ServletException`**
 
