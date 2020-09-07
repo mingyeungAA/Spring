@@ -4,7 +4,7 @@
 - DispatcherServlet 이전에 실행되며, 요청내용을 변경하거나 여러가지 체크를 수행한다.
 - 처리가 끝난 후에도 응답내용에 대해서도 변경할 수 있다.
 
-![](C:\Users\mingy\AppData\Roaming\Typora\typora-user-images\image-20200907190816432.png)
+![](https://postfiles.pstatic.net/MjAyMDA5MDdfMTcy/MDAxNTk5NDczMjcyMzE0.SHK6STv0IgZEa2plnHpkhdmrP8DSJxR2_4jYwVAR43kg.3VmvPlY4vDKZR-jrHQGdiQ0wDRQnzIYlqc3K7-tv3_Ig.PNG.mingyeung/image.png?type=w966)
 
 <br>
 
