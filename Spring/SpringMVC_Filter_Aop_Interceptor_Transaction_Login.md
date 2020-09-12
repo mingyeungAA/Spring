@@ -646,7 +646,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 
 <br>
 
-**22. applicationContext.xml **
+**22. applicationContext.xml**
 
 => transactionManager 추가
 
