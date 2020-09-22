@@ -13,7 +13,7 @@
 
 ### 💬프로젝트 설정
 
-**0. 프로젝트 **
+**0. 프로젝트**
 
 <img src="https://postfiles.pstatic.net/MjAyMDA5MjJfMTgz/MDAxNjAwNzcxMzk4NTYz.HAQIFCEL-kUcYipwfSdRKQkcftEXV5HY9bU2xxOHAG8g.ZHEJuks73wWK6JbkQXMkqlEsbZaAuhhgG7CFmasi30sg.PNG.mingyeung/image.png?type=w966" style="zoom:33%;" />
 
