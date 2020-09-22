@@ -31,15 +31,21 @@
 
 **1. pom.xml 설정**
 
-- `tomcat-embed-jasper` 추가  :  Spring Boot 에서는 공식문서에서도 JSP를 사용하는 것을 권하지 않고, 다른 템플릿 엔진을 추천한다. (예를들어, Thymeleaf, Freemarker 등)  
+- **`tomcat-embed-jasper`** 추가  
 
-  **👉** JSP를 사용하기 위해 추가한다.
+  **👉** Spring Boot 에서는 공식문서에서도 JSP를 사용하는 것을 권하지 않고, 다른 템플릿 엔진을 추천한다. (예를들어, Thymeleaf, Freemarker 등)
 
-- **ojdbc6** 버전도 다시 설정한다.  👉 아래 `</dependencies>`가 끝나고 밖에 `<repository>`를 추가해서 매핑해준다.
+  **👉 JSP를 사용하기 위해 추가한다.**
+
+- **ojdbc6** 버전도 다시 설정한다.  
+
+  👉 아래 `</dependencies>`가 끝나고 밖에 `<repository>`를 추가해서 매핑해준다.
 
 - **jstl** 추가
 
-- `spring-bot-devtools` 추가 : classpath에 존재하는 파일의 변경을 감지하고, 자동으로 서버를 restart해준다.
+- **`spring-boot-devtools`** 추가 
+
+  **👉** classpath에 존재하는 파일의 변경을 감지하고, 자동으로 서버를 restart해준다.
 
 ```java
 	<!-- tomcat-embed-jasper -->
@@ -144,7 +150,7 @@ ORDER BY MYNO DESC;
 
 
 
-**4. MyBoardMapper **
+**4. MyBoardMapper**
 
 - com.boot.jdbc.model.mapper (interface로 만든다.)
 - **`@Mapper`** 붙이기
