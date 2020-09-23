@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Insert Page</h1>
+	
+	<form th:action="@{insertres}" method="post">
+		<table border="1">
+			<tr>
+				<th>제목</th>
+				<td><input type="text" name="mytitle" ></td>
+			</tr>
+			<tr>
+				<th>작성자</th>
+				<td><input type="text" name="myname" ></td>
+			</tr>
+			<tr>
+				<th>내용</th>
+				<td><textarea cols="60" rows="10" name="mycontent"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="right">
+					<input type="submit" th:value="글작성하기" >
+					<input type="button" th:value="목록" onclick="location.href='list'">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

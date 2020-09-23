@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Update Page</h1>
+	
+	<form th:action="updateres" method="post">
+	<input type="hidden" name="myno" th:value="${dto.myno}">
+		<table border="1">
+			<tr>
+				<th>제목</th>
+				<td><input type="text" th:value="${dto.mytitle}" name="mytitle"></td>
+			</tr>
+			<tr>
+				<th>작성자</th>
+				<td><input type="text" th:value="${dto.myname}" name="myname" readonly></td>
+			</tr>
+			<tr>
+				<th>내용</th>
+				<td><textarea th:text="${dto.mycontent}" cols="60" rows="10"  name="mycontent"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="right">
+					<input type="submit" th:value="수정하기" >
+					<input type="button" th:value="취소" th:onclick="|location.href='detail?myno=${dto.myno}'|">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

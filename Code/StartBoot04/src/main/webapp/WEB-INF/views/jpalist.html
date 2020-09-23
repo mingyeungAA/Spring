@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>List</h1>
+	
+	<div>
+		<table border="1">
+		<col width="50">
+		<col width="100">
+		<col width="500">
+		<col width="200">
+			<tr>
+				<th>번호</th>
+				<th>작성자</th>
+				<th>제목</th>
+				<th>작성일</th>
+			</tr>
+			<tr th:if="${list.size() == 0}">
+				<td colspan="4" align="center">----글없다.----</td>
+			</tr>
+			<tr th:unless="${list.size() == 0}" th:each="dto:${list}">
+				<td th:text="${dto.myno}" align="center">myno</td>
+				<td th:text="${dto.myname}">myname</td>
+				<td><a th:href="|@{/member/detail}?myno=${dto.myno}|" th:text="${dto.mytitle}">mytitle</a></td>
+				<td th:text="${dto.mydate}">mydate</td>
+			</tr>
+			<tr>
+				<td colspan="4" align="right">
+					<input type="button" th:value="글작성" onclick="location.href='insertform'">
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
