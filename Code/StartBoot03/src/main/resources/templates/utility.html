@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<!-- thymeleaf로 실제 값을 넣어줄것임 -->
+	<p th:text="${#calendars.format(#calendars.createNow(), 'yyyy-MM-dd HH:mm')}">#dates objects</p>
+	<p th:text="${#numbers.formatInteger(3000.1234, 4)}">#numbers objects</p>
+	<p th:text="${#strings.toUpperCase('hello, qclass')}">#strings objects</p>
+	
+	<a href="/">index</a>
+	
+</body>
+</html>

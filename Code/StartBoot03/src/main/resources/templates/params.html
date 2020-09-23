@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1 th:text="|Hello, ${param.id}|">Hello, parameter id</h1>
+	
+	<h2 th:text="|Hello, ${#request.getParameter('id')}|">Hello, parameter id</h2>
+	
+	<h3 th:text="|Hello, ${session.pw}|">Hello, session pw</h3>
+	
+	<h4 th:text="|Hello, ${session['pw']}|">Hello, session pw</h4>
+	
+	<h5 th:text="|Hello, ${dto.subject}|">Hello, subject</h5>
+	
+	<h6 th:text="|Hello, ${dto.seq}|">Hello, seq</h6>
+	
+</body>
+</html>
