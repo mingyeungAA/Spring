@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- context : bean이라는 것을 가지고 잇는 -->
+	<!-- component scan : @Component를 읽어볼거다. -->
+	<!-- base-package : 지정된폴더부터 그 밑의 폴더들 까지 다 살펴볼거다.(=src부분.자바클래스폴더) -->
+	<context:component-scan base-package="com.test01.anno"/>
+	<!-- => @Component를 찾아서 bean으로 만들어줄거야 -->
+	<!-- => "com.test01.anno" 패키지 아래있는 모든 클래스에서 @Component를 찾아서 bean(객체)로 만들거야 -->
+	
+	
+</beans>
