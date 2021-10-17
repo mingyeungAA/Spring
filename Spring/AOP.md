@@ -108,7 +108,9 @@
 
 `</aop:config>`
 
+<br>
 
+before -> method실행  -> after-returning -> (예외발생시)after-throwing -> after
 
 <br>
 
