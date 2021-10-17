@@ -44,11 +44,11 @@
 | :----------------------: | :----------------------------------------------------------: |
 | 결합점<br />(Join Point) | 인스턴스의 생성시점. 메소드를 호출하는 시점. Exception이 발생하는 시점과 같이 애플리케이션이 실행될때 특정 작업이 실행되는 시점을 의미한다. <br />(Aspect를 플러그인 할 수 있는 애플리케이션의 실행시점) |
 |  교차점<br />(Pointcut)  | 충고가 어떤 결합점에 적용되어야 하는지 정의. 명시적인 클래스의 이름, 메소드의 이름이나 클래스나 메소드의 이름과 패턴이 일치하는 결합점이 지정 가능토록 해준다.<br />(스프링 설정파일 안에 XML로 작성) (=ccc를 어디다가 붙일것인지 알려주는) |
-|    충고<br />(Advice)    | 교차점에서 지정한 결합점에서 실행(삽입)되어야 하는 코드. Aspect의 실제 구현체<br />(잘라놓은 실제 코드 = ccc) |
+|    충고<br />(Advice)    | 교차점에서 지정한 결합점에서 실행(삽입)되어야 하는 코드. Aspect의 실제 구현체<br />(=잘라놓은 실제 코드 = ccc) |
 |  에스펙트<br />(Aspect)  | 에스펙트는 AOP의 중심단위. Advice와 pointcut을 합친것이다. 구현하고자 하는 횡단 관심사의 기능,애플리케이션의 모듈화 하고자 하는 부분. |
 |   엮기<br />(Weaving)    | 에스펙트를 대상 객체에 적용하여 새로운 프록시 객체를 생성하는 과정을 말한다.<br />Aspect는 대상 객체의 지정된 결합점에 엮인다. <br />(=하나로 묶여서 잘 실행회는 것 = ccc+cc) |
 
-**Advisor(Aspect) = Advice + pointcut**
+**Advisor(Aspect) = Advice(=ccc공통사항) + pointcut**
 
 
 
@@ -68,7 +68,7 @@
 
    - XML설정 파일에서 `<aop:config>`를 이용해서 Aspect를 설정한다.
 
-     (즉, Advice와 pointcut을 설정한다.)
+     (즉, Advice(=ccc공통사항)와 pointcut을 설정한다.)
 
      <br>
 
@@ -76,7 +76,7 @@
 
    - @Aspect 어노테이션을 이용해서 Aspect클래스를 작성한다.
 
-   - 이때, Aspect클래스는 Advice를 구현하는 메서드와 pointcut을 포함한다.
+   - 이때, Aspect클래스는 Advice(=ccc공통사항)를 구현하는 메서드와 pointcut을 포함한다.
 
    - XML설정 파일에서 `<aop:aspectj-autoproxy>`를 설정한다.
 
@@ -120,13 +120,13 @@
 
 : target을 감싸서 target의 요청을 대신 받아주는 랩핑 오브젝트이다.
 
-: proxy는 advice를 target객체에 적용하면서 생성되는 객체이다.
+: proxy는 advice(=ccc공통사항)를 target객체에 적용하면서 생성되는 객체이다.
 
 : 클라이언트(호출자)에서 target을 호출하게 되면, target이 아닌 target을 감싸고 있는 proxy가 호출되어
 
   target메소드 실행전에 선처리, target메소드 실행 후, 후처리를 실행시키도록 구성되어 있다.
 
-: AOP에서 proxy는 호출을 가로챈 후, advice에 등록된 기능을 수행 후, target메소드를 호출한다.
+: AOP에서 proxy는 호출을 가로챈 후, advice(=ccc공통사항)에 등록된 기능을 수행 후, target메소드를 호출한다.
 
 <br>
 
@@ -144,19 +144,19 @@
 
 - **@Before**
 
-   : target메소드가 호출되기 전에 advice기능을 수행
+   : target메소드가 호출되기 전에 advice(=ccc공통사항)기능을 수행
 
 - **@After** 
 
-  : target메소드의 결과에 상관없이 target메소드가 완료되면 advice기능을 수행
+  : target메소드의 결과에 상관없이 target메소드가 완료되면 advice(=ccc공통사항)기능을 수행
 
 - **@After-Returning** 
 
-  : target메소드가 정상적으로 동작한 후, 결과값을 리턴한 후에 advice기능을 수행
+  : target메소드가 정상적으로 동작한 후, 결과값을 리턴한 후에 advice(=ccc공통사항)기능을 수행
 
 - **@After-Throwing** 
 
-  : target메소드가 수행중에 비정상적으로(예외가 발생하면) 동작하면, advice기능을 수행
+  : target메소드가 수행중에 비정상적으로(예외가 발생하면) 동작하면, advice(=ccc공통사항)기능을 수행
 
 <br>
 
